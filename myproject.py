@@ -1,4 +1,4 @@
-from flask import Flask, request
+from flask import Flask, request, render_template
 app = Flask(__name__)
 
 
@@ -9,7 +9,7 @@ def admin():
             username, password = str(request.form['username']), str(request.form['password'])
             return "<div>You are logged in!</div>"
 
-    return "<div>Welcome to admin</div>"
+    return render_template('login.html')
 
 
 @app.route("/")
