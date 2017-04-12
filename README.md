@@ -36,3 +36,8 @@ Simple python web back-end
     $ sudo systemctl restart nginx
     $ sudo ufw delete allow 5000
     $ sudo ufw allow 'Nginx Full'
+
+## Restart after Python code changes  
+
+    $ sudo systemctl restart nginx
+    $ sudo systemctl restart myproject
