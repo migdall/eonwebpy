@@ -39,5 +39,4 @@ Simple python web back-end
 
 ## Restart after Python code changes  
 
-    $ sudo systemctl restart nginx
     $ sudo systemctl restart myproject
